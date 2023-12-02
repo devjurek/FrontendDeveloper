@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p {
+        color: salmon;
+
+    }
+    p::first-letter{
+        color: aqua;
+    }
+    p::before{
+        content: "🔥";
+    }
+    p::after{ 
+        content: "💧";
+    }
+    p:hover {
+        color: skyblue;
+
+    }
+    div p:nth-child(2){
+        color: violet;
+    }
+    ::placeholder{
+        color: brown;
+    }
+</style>
+</head>
+<body>
+    <p>Prueba de pseudo clases y pseudo elementos</p>
+    <div>
+        <p>Prueba</p>
+        <p>Prueba</p>
+        <p>Prueba</p>
+        <p>Prueba</p>
+        <p>Prueba</p>
+    </div>
+<input type="text" placeholder="name">
+</body>
+</html>
