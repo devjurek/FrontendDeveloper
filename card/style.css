@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; /* Aumenta el tamaño de la fuente al 93.75% */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 231, 192); /* Fondo general de la página */
+    color: #333; /* Color del texto en el tema claro */
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; /* Oculta la barra de scroll horizontal */
+}
+
+img {
+    
+    width: 50%; /* Aumenta el tamaño de la imagen al 75% */
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%; /* Hace la imagen circular */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%); /* Ajusta la posición exacta usando transform */
+}
+
+.container {
+    border-radius: 2.25rem; /* Aumenta el tamaño del border-radius al 2.25rem */
+    width: 67.5vw; /* Aumenta el tamaño del ancho al 67.5% del viewport width */
+    max-width: 300px; /* Aumenta el tamaño del ancho máximo al 300px */
+    margin: 7.5rem auto; /* Aumenta el tamaño del margen a 7.5rem */
+    background-color: #fff; /* Fondo de la tarjeta en el tema claro */
+    color: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Aumenta el tamaño de la sombra */
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.container.tema-oscuro {
+    background-color: #1a1a1a; /* Fondo de la tarjeta en el tema oscuro */
+    color: #eee;
+}
+
+.container img {
+    border-bottom: 1px solid #ccc; /* Línea divisoria debajo de la imagen */
+}
+
+.cambiodetema {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.boton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7.5px; /* Aumenta el tamaño del padding a 7.5px */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .username {
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente a 1.5rem */
+    font-weight: bold;
+    margin: 7.5px 0; /* Aumenta el tamaño del margen a 7.5px */
+    text-align: center;
+}
+
+.container .rol {
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente a 1.2rem */
+    margin-bottom: 15px; /* Aumenta el tamaño del margen inferior a 15px */
+    text-align: center;
+}
+
+.actions {
+    padding: 0.75rem; /* Aumenta el tamaño del padding a 0.75rem */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actions div {
+    width: 50%;
+    text-align: center;
+}
+
+.actions div span {
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente a 1.2rem */
+}
+
+.influence {
+    display: flex;
+    border-top: 1px solid #ccc; /* Línea divisoria arriba de las estadísticas */
+}
+
+.influence div {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem; /* Aumenta el tamaño del padding a 0.75rem */
+}
+
+.influence div:nth-child(2) {
+    border-left: 1px solid #ccc; /* Línea divisoria entre seguidores y seguidos */
+}
+
+.influence div p {
+    font-weight: bold;
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente a 1.2rem */
+}
+
+.container button {
+    width: 100%;
+    height: 4.125rem; /* Aumenta el tamaño de la altura a 4.125rem */
+    background-color: rgb(5, 164, 93); /* Color del botón Follow de Instagram */
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente a 1.2rem */
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container button:focus-visible {
+    outline: none;
+}
