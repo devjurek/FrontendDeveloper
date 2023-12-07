@@ -11,6 +11,7 @@ html {
     color: #333; /* Color del texto en el tema claro */
 }
 
+
 body {
     margin: 0;
     overflow-x: hidden; /* Oculta la barra de scroll horizontal */
@@ -39,6 +40,13 @@ img {
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s;
     
+}
+
+@media (max-width: 500px) {
+    html {
+        background-color: #fe9696; 
+    }
+
 }
 
 .container.tema-oscuro {
